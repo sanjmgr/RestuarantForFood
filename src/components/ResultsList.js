@@ -28,7 +28,8 @@ const ResultsList = ({ results, title, navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 20
+        marginBottom: 20,
+        backgroundColor: '#fff'
     },  
     titleStyle: {
         fontSize: 18,

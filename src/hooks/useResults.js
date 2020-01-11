@@ -14,7 +14,6 @@ export default () => {
                     location: 'San Francisco'
                 }
             });
-            console.log(response.data.businesses)
             setResults(response.data.businesses)
         } catch (err) {
             setErrorMessage('Something went wrong!!')
@@ -22,7 +21,7 @@ export default () => {
     }
 
     useEffect(() => {
-        searchApi('pasta');
+        searchApi('Burger');
     }, []);
 
     return [searchApi, results, errorMessage];

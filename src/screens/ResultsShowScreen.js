@@ -25,7 +25,7 @@ const ResultsShowScreen = ({ navigation }) => {
     }
 
     return (
-        <>  
+        <React.Fragment style={styles.backgroundStyle}>  
             <FlatList
                 data={result.photos}
                 keyExtractor={photo => photo}
@@ -33,11 +33,14 @@ const ResultsShowScreen = ({ navigation }) => {
                     return <Image style={styles.imageStyle} source={{uri: item}} />
                 }}
             />
-        </>
+        </React.Fragment>
     )
 }
 
 const styles = StyleSheet.create({
+    backgroundStyle: {
+        backgroundColor: '#fff'
+    },
     imageStyle: {
         marginHorizontal: 25,
         marginVertical: 10,

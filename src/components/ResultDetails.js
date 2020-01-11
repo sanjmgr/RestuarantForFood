@@ -13,12 +13,14 @@ const ResultsDetails = ({ result }) => {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft: 15
+        marginLeft: 15,
+        backgroundColor: '#fff'
     },
     nameStyle: {
         fontWeight: 'bold'
     },
     imageStyle: {
+        backgroundColor:'#fff',
         width: 250,
         height: 120,
         borderRadius: 4,
